@@ -7,7 +7,7 @@ let offset = 0;
 
 function convertPokemonToLi(pokemon) {
     return `
-        <li class="pokemon ${pokemon.type}">
+        <li onclick="abrirModal()" class="pokemon ${pokemon.type}">
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
 
@@ -45,3 +45,16 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, limit)
     }
 })
+
+
+
+function abrirModal(){
+    const modal = document.getElementById('janelaPokeDtlhd')
+    modal.classList.add('abrir')
+
+    modal.addEventListener('click', (e) => {
+        if(e.target.id == 'fechar' || e.target.id == 'janelaPokeDtlhd'){
+            modal.classList.remove('abrir')
+        }
+    })
+}

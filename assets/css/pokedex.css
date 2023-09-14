@@ -86,6 +86,11 @@
     border-radius: 1rem;
 }
 
+
+.pokemon:hover{
+    cursor:pointer;
+}
+
 .pokemon .number {
     color: #000;
     opacity: .3;
@@ -145,6 +150,178 @@
     border: none;
     border-radius: 1rem;
 }
+
+
+.modalPokeDtlhd{
+    font-size: 1.1em;
+    width: 85%;
+    height: 95%;
+    background-color: rgb(64, 230, 147);
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.modalPoke{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 0 1rem;
+    width: 100%;
+    height: 40%;
+    margin: 0 auto;
+    color: #fff;
+    
+}
+
+.mButtons{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    border: none;
+}
+
+.fechar, .like{
+    font-size: 1.2rem;
+    border: none;
+    color: #fff;
+    background-color: #ffffff00;
+}
+
+.like:hover, .fechar:hover{
+    cursor: pointer;
+}
+
+
+.NN{
+  margin-top: 1rem;
+}
+
+.mName{
+    font-size: 1.4em;
+    font-weight: bold;
+    
+}
+
+.mNumber{
+   
+    font-weight: bold;
+}
+
+.mTypes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    width: 50%;
+    height: 9%;
+    text-align: center;
+    list-style: none;
+    
+    
+}
+
+.mTypes > li{
+    font-size: 0.8em;
+    background-color: rgb(122, 235, 178);
+    width: 100%;
+    margin: 0 5px;
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.mNumber{
+ float: right;   
+}
+
+.mImgDiv{
+    height: 55%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mPokeImg{
+    display: flex;
+    min-width: 140px;
+    max-width: 100%;
+    height: 100%;
+     margin: 0 auto;
+}
+
+.modalAboutInfo{
+    width: 100%;
+    padding: 2rem 1rem 1rem 1rem;
+    height: 60%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    
+}
+
+.modalAbout{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 12%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.modalAbout > span{
+    color: #9e9d9d;;
+    height: 50%;
+}
+
+.modalAbout > span:hover{
+    color: #444343;
+    height: 100%;
+    cursor: pointer;
+    border-bottom: 0.125rem solid #000;;
+}
+
+.modalAbout > span:visited{
+    color: #444343;
+}
+
+.modalInfos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    
+}
+
+.modalInfo{
+   width: 30%;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+   margin: 0;
+   color: #9e9d9d;
+}
+
+.modalInfos > .modalInfo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 70%;
+    height: 100%;
+    margin: 0;
+    color: #444343;
+
+}
+
+.modalInfo > p span{
+    margin-right: 70px;
+    
+}
+
+
+.infoB{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 2px 0;
+    color: #444343;
+}
+
 
 @media screen and (min-width: 380px) {
     .pokemons {
